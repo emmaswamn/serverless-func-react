@@ -41,13 +41,15 @@ const Product = () => {
                     <h2>{name}</h2>
                     <div className="title-underline"></div>
                 </div>
-                <article className='single-product'>
-                    <img className='single-product-img' src={image[0].url} alt={name} />
-                </article>
-                <div>
-                    <h5>{name}</h5>
-                    <h5 className='price'>${price}</h5>
-                    <p>{desc}</p>
+                <div className="product-desc">
+                    <article className='single-product'>
+                        <img className='single-product-img' src={image[0].url} alt={name} />
+                        <div>
+                            <h5>{name}</h5>
+                            <h5 className='price'>${price}</h5>
+                            <p>{desc}</p>
+                        </div>
+                    </article>
                 </div>
             </div>
         </section>       
